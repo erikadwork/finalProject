@@ -1,4 +1,4 @@
-/* Reset & Global Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@
     color: #333;
   }
   
-  /* Layout Container */
+
   .wrapper {
     background-color: #fff;
     max-width: 3000px;
@@ -21,7 +21,7 @@
     padding: 20px;
   }
   
-  /* Navigation Styles */
+
   .sitenav {
     display: flex;
     justify-content: space-between;
@@ -45,7 +45,7 @@
   
   .sitenav .left img {
     width: 205px;
-    border-radius: 20px; /* Rounded logo image */
+    border-radius: 20px; 
   }
   
   .sitenav a {
@@ -60,7 +60,7 @@
     text-decoration: underline;
   }
   
-  /* Headings & Text */
+
   h1, h2, h3 {
     color: #4d534e;
     text-align: center;
@@ -85,13 +85,13 @@
     margin-bottom: 1rem;
   }
   
-  /* Generic Image Styling */
+
   img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 20px;  /* This makes all images more rounded */
+    border-radius: 20px;  
   }
   
   figure {
