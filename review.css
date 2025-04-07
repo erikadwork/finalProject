@@ -1,0 +1,115 @@
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 1.8rem;
+    font-family: Georgia, Arial, sans-serif;
+    line-height: 1.6;
+    background: #c5cecd;
+    color: #333;
+  }
+  
+  /* Layout Container */
+  .wrapper {
+    background-color: #fff;
+    max-width: 3000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Navigation Styles */
+  .sitenav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #5e6a65;
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .sitenav .left,
+  .sitenav .right {
+    flex: 0 0 auto;
+  }
+  
+  .sitenav .center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+  }
+  
+  .sitenav .left img {
+    width: 205px;
+    border-radius: 20px; /* Rounded logo image */
+  }
+  
+  .sitenav a {
+    color: #fffeff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.7rem;
+    margin: 0 10px;
+  }
+  
+  .sitenav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Headings & Text */
+  h1, h2, h3 {
+    color: #4d534e;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-size: 1.3em;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+  }
+  
+  p {
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  /* Generic Image Styling */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;  /* This makes all images more rounded */
+  }
+  
+  figure {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  figcaption {
+    font-size: 2rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
+  footer {
+    background-color: #343735;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 5rem;
+  }
+  
