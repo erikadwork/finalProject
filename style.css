@@ -214,3 +214,18 @@ footer {
 .clear {
   clear: both;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+  grid-gap: 90px;  /* Adjusts the spacing between grid items */
+  padding: 50px;   /* Optional: adds some padding around the grid */
+}
+
+.grid-container img {
+  width: 100%;  /* Makes images fill the grid cell */
+  height: auto; /* Maintains aspect ratio */
+  display: block;  /* Removes any inline spacing issues */
+  border: 10px solid #788c82; /* Adds a 2px solid border with light gray color */
+  border-radius: 10px;    /* Rounds the corners with a 10px radius */
+}
