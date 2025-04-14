@@ -200,3 +200,17 @@ footer {
   padding: 1rem;
   margin-top: 5rem;
 }
+
+/* styles.css */
+
+/* Style for the image */
+.wrap-image {
+  float: left;
+  margin: 0 15px 15px 0;
+  width: 1000px; /* Optional: set a width for the image */
+}
+
+/* Clear float for content below */
+.clear {
+  clear: both;
+}

@@ -6,7 +6,7 @@
   }
   
   body {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* change to 1.25 */
     font-family: Georgia, Arial, sans-serif;
     line-height: 1.6;
     background: #c5cecd;
