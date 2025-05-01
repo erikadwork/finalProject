@@ -443,3 +443,110 @@ footer {
     text-align: center;
   }
 }
+/* reset any stray spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* scrollable viewport */
+.worldmap-container {
+  width: 900px;
+  overflow-x: auto;    /* horizontal scroll */
+  overflow-y: hidden;  /* hide any vertical overflow */
+  box-sizing: border-box;
+  margin: 20px auto;
+  border: 4px solid #809381;
+  border-radius: 4px;
+}
+
+/* map wrapper (shrink-wraps to the image) */
+.worldmap {
+  position: relative;
+  display: inline-block;
+}
+
+/* the actual map image */
+.worldmap-base {
+  display: block;
+  width: 1400px;  /* or your image’s natural width */
+  height: auto;
+}
+
+/* common marker styling */
+.worldmap-item {
+  position: absolute;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* tooltip styling via the title attribute */
+.worldmap-item::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 125%;            /* place tooltip above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+/* reveal tooltip on hover */
+.worldmap-item:hover::after {
+  opacity: 1;
+}
+
+/* icon color */
+.icon-blue {
+  color: #007bff;
+}
+
+/* individual pin positions */
+#worldmap-item-shoe {
+  top: 200px;
+  left: 440px;
+}
+
+#worldmap-item-book {
+  top: 535px;
+  left: 374px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: flex-start;   /* top-align image & text */
+  gap: 24px;                  /* space between image & text */
+  margin: 40px auto;          /* vertical spacing between sections */
+  max-width: 900px;           /* constrain width if you like */
+}
+
+.profile-img {
+  width: 150px;     /* whatever size you like */
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.profile-text {
+  flex: 1;                    /* take remaining space */
+}
+
+.profile-text h3 {
+  color: #5e7d6a;             /* same blue as your icons */
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.profile-text p {
+  line-height: 1.6;
+  color: #333;
+}
