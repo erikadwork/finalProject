@@ -474,12 +474,7 @@ footer {
   height: auto;
 }
 
-/* common marker styling */
-.worldmap-item {
-  position: absolute;
-  font-size: 24px;
-  cursor: pointer;
-}
+
 
 /* tooltip styling via the title attribute */
 .worldmap-item::after {
