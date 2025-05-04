@@ -106,6 +106,58 @@ h3 {
   max-width: 100%;
   height: auto;
   border-radius: 20px;
+
+  /* start hidden and lowered */
+  opacity: 0;
+  transform: translateY(50px);
+
+  /* animate into place */
+  animation: slideInUp 1s ease-out forwards;
+  /* optional: delay the start */
+  /* animation-delay: 0.3s; */
+}
+
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* only this heading */
+.trade-header {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: slideInDown 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+/* your existing img animation */
+.trade-img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideInUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+/* keyframes (same as before) */
+@keyframes slideInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .lead-text {
@@ -394,6 +446,38 @@ footer {
 .modal-actions .submit{ background:#5e6a65; color:#fff; border:none; padding:.5rem 1rem; border-radius:.5rem; cursor:pointer;}
 .modal-actions .cancel{ background:none; border:none; cursor:pointer;}
 
+
+/* make the post dates smaller and a bit muted */
+.trade-item .date {
+  font-size: 0.8rem;       /* or whatever size you prefer */
+  color: #666;             /* optional: tone it down visually */
+  margin: 0.3em 0;         /* optional: tighten the spacing */
+}
+.trade-item {
+  display: flex;
+  flex-direction: column;
+}
+.trade-item .trade-btn {
+  margin-top: auto;  /* “pushes” the button to the bottom of its card */
+}
+.trade-controls {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+#search {
+  flex: 1;
+  padding: 0.5em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#sort {
+  padding: 0.5em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
 
 /* entire block */
 .team {

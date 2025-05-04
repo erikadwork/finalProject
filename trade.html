@@ -1,149 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>The Beauty Of A Mystery</title>
-    <link rel="stylesheet" href="style.css">
-  
-  
-  </head>
+  <meta charset="UTF-8" />
+  <title>The Beauty Of A Mystery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <body>
-    <div class="wrapper">
-      <div class="site-nav">
-        <img src="images/logo.png" alt="Site Logo" class="site-logo">
-        <nav>
-          <a href="home.html">Home</a>
-          <a href="trade.html">Trade</a>
-          <a href="reviews.html">Reviews</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="about.html">About</a>
-          <a href="map.html">Sample Collection</a>
-        </nav>
-      </div>
-        <div class="right">
-         
-        </div>
+<body>
+  <div class="wrapper">
+    <div class="site-nav">
+      <img src="images/logo.png" alt="Site Logo" class="site-logo">
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="trade.html">Trade</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="map.html">Sample Collection</a>
+      </nav>
+    </div>
 
-    
-        <br><br>
+    <br><br>
 
-        <h1>Got Dupes?</h1>
-        <br>
-        <img src="images/trade.jpg" class="trade-img" alt="Trading banner">
+    <h1 class="trade-header">Got Dupes?</h1>
+    <br>
+    <img src="images/trade.jpg" class="trade-img" alt="Trading banner">
 
-        <br>
-        Our trading hub makes it easy to swap unwanted duplicates with fellow collectors.
-        List your spare item in seconds using the quick-post buttons, or browse existing 
-        listings until you spot something you’d like. Tapping "Trade" opens a private message
-        window where you can propose a swap; the original poster reviews your offer and accepts
-        or declines with a single click. It’s a simple, community-driven way to keep your collection
-        fresh while helping others complete theirs.
-
-<br><br>
-
-        <h1>Posts</h1>
-    
-
-<button class="fab" id="new-post-btn" aria-label="Create trade post">＋</button>
-<!-- Trading Board -->
-<section class="trade-board">
-  <!-- ▾ CARD 1 ▾ -->
-  <article class="trade-item">
-    <h3>Smiski — “Sleeping”</h3>
-
-    <img src="images/trade1.jpg" alt="Sleeping Smiski figurine">
-
-    <p class="want">
-      <strong>Looking for:</strong> Any Smiski “Stretching” or “Surprised”
+    <p>
+      Our trading hub makes it easy to swap unwanted duplicates with fellow collectors.
+      List your spare item in seconds using the quick-post buttons, or browse existing 
+      listings until you spot something you’d like. Tapping "Trade" opens a private message
+      window where you can propose a swap; the original poster reviews your offer and accepts
+      or declines with a single click. It’s a simple, community-driven way to keep your collection
+      fresh while helping others complete theirs.
     </p>
 
-    <p class="poster">Posted by <span>@smiskiobsessed2</span></p>
+    <br><br><br>
 
-    <button class="trade-btn">Offer Trade</button>
-  </article>
+    <h1>Posts</h1>
+    <button class="fab" id="new-post-btn" aria-label="Create trade post">＋</button>
 
-  <!-- ▾ CARD 2 ▾ -->
-  <article class="trade-item">
-    <h3>Hirono "The Ghost”</h3>
+    <!-- Filter & Sort Controls -->
+    <div class="trade-controls">
+      <input type="text" id="search" placeholder="Search by keyword…">
+      <select id="sort">
+        <option value="newest">Sort: Most Recent</option>
+        <option value="oldest">Sort: Oldest First</option>
+      </select>
+    </div>
 
-    <img src="images/trade2.jpg" alt="Hirono Ghost">
+    <!-- Trading Board -->
+    <section class="trade-board">
+      <!-- ▾ CARD 1 ▾ -->
+      <article class="trade-item"
+               data-date="2025-05-03"
+               data-keywords="smiski sleeping stretching surprised">
+        <h3>Smiski — “Sleeping”</h3>
+        <img src="images/trade1.jpg" alt="Sleeping Smiski figurine">
+        <p class="want">
+          <strong>Looking for:</strong> Any Smiski “Stretching” or “Surprised”
+        </p>
+        <p class="poster">Posted by <span>@peepeepoopy</span></p>
+        <p class="date">May 3, 2025</p>
+        <button class="trade-btn">Offer Trade</button>
+      </article>
 
-    <p class="want">
-      <strong>Looking for:</strong> The Other One Series "The Fox"
-    </p>
+      <!-- ▾ CARD 2 ▾ -->
+      <article class="trade-item"
+               data-date="2025-05-01"
+               data-keywords="hirono ghost fox">
+        <h3>Hirono “The Ghost”</h3>
+        <img src="images/trade2.jpg" alt="Hirono Ghost">
+        <p class="want">
+          <strong>Looking for:</strong> The Other One Series "The Fox"
+        </p>
+        <p class="poster">Posted by <span>@AngelCollector</span></p>
+        <p class="date">May 1, 2025</p>
+        <button class="trade-btn">Offer Trade</button>
+      </article>
 
-    <p class="poster">Posted by <span>@AngelCollector</span></p>
+      <!-- ▾ CARD 3 ▾ -->
+      <article class="trade-item"
+               data-date="2025-04-28"
+               data-keywords="pino jelly live stage">
+        <h3>Pino Jelly Star Project Dupe!</h3>
+        <img src="images/trade3.jpg" alt="Pino Jelly Meet & Greet">
+        <p class="want">
+          <strong>Looking for:</strong> Live Stage
+        </p>
+        <p class="poster">Posted by <span>@SweetLoot</span></p>
+        <p class="date">April 28, 2025</p>
+        <button class="trade-btn">Offer Trade</button>
+      </article>
 
-    <button class="trade-btn">Offer Trade</button>
-  </article>
+      <!-- ▾ CARD 4 ▾ -->
+      <article class="trade-item"
+               data-date="2025-04-25"
+               data-keywords="smiski duplicate series2">
+        <h3>Smiski duplicate</h3>
+        <img src="images/trade4.webp" alt="Smiski duplicate">
+        <p class="want">
+          <strong>Looking for:</strong> Smiski Series 2
+        </p>
+        <p class="poster">Posted by <span>@rathands</span></p>
+        <p class="date">April 25, 2025</p>
+        <button class="trade-btn">Offer Trade</button>
+      </article>
 
-  <!-- ▾ CARD 3 ▾ -->
-  <article class="trade-item">
-    <h3>Pino Jelly Star Project Dupe!</h3>
+      <!-- ▾ CARD 5 ▾ -->
+      <article class="trade-item"
+               data-date="2025-04-20"
+               data-keywords="hirono liar">
+        <h3>Hirono liar</h3>
+        <img src="images/trade5.webp" alt="Hirono liar">
+        <p class="want">
+          <strong>Looking for:</strong> Anything
+        </p>
+        <p class="poster">Posted by <span>@kat231</span></p>
+        <p class="date">April 20, 2025</p>
+        <button class="trade-btn">Offer Trade</button>
+      </article>
 
-    <img src="images/trade3.jpg" alt="Pino Jelly Meet&Greet">
+      <!-- ▾ CARD 6 ▾ -->
+      <article class="trade-item"
+               data-date="2025-04-15"
+               data-keywords="peach gigi frankie">
+        <h3>Peach rise up Gigi</h3>
+        <img src="images/trade6.webp" alt="Peach rise up Gigi">
+        <p class="want">
+          <strong>Looking for:</strong> Any Frankie
+        </p>
+        <p class="poster">Posted by <span>@psychoticpsychmajor</span></p>
+        <p class="date">April 15, 2025</p>
+        <button class="trade-btn">Offer Trade</button>
+      </article>
+    </section>
 
-    <p class="want">
-      <strong>Looking for:</strong> Live Stage
-    </p>
+    <footer>
+      <p>&copy; 2025 by Mystery Marvels. All rights reserved.</p>
+    </footer>
+  </div>
 
-    <p class="poster">Posted by <span>@SweetLoot</span></p>
+  <!-- Filtering & Sorting Script -->
+  <script>
+    const board = document.querySelector('.trade-board');
+    const items = Array.from(board.querySelectorAll('.trade-item'));
 
-    <button class="trade-btn">Offer Trade</button>
-  </article>
+    // 1) Keyword search
+    document.getElementById('search').addEventListener('input', e => {
+      const q = e.target.value.toLowerCase().trim();
+      items.forEach(item => {
+        const title   = item.querySelector('h3').textContent.toLowerCase();
+        const kws     = item.dataset.keywords.toLowerCase();
+        const matches = !q || title.includes(q) || kws.includes(q);
+        item.style.display = matches ? '' : 'none';
+      });
+    });
 
-  <!-- ▾ CARD 4 ▾ -->
-  <article class="trade-item">
-    <h3>Smiski duplicate</h3>
-
-    <img src="images/trade4.webp" alt="smiski">
-
-    <p class="want">
-      <strong>Looking for:</strong> Smiski series 2
-    </p>
-
-    <p class="poster">Posted by <span>@rathands</span></p>
-
-    <button class="trade-btn">Offer Trade</button>
-  </article>
-
-
-  <!-- ▾ CARD 5 ▾ -->
-  <article class="trade-item">
-    <h3>Hirono liar </h3>
-
-    <img src="images/trade5.webp" alt="hirono liar">
-
-    <p class="want">
-      <strong>Looking for:</strong> Anything
-    </p>
-
-    <p class="poster">Posted by <span>@kat231</span></p>
-
-    <button class="trade-btn">Offer Trade</button>
-  </article>
-
-
-  <!-- ▾ CARD 6 ▾ -->
-  <article class="trade-item">
-    <h3>Peach rise up Gigi</h3>
-
-    <img src="images/trade6.webp" alt="peach gigi">
-
-    <p class="want">
-      <strong>Looking for:</strong> Any Frankie
-    </p>
-
-    <p class="poster">Posted by <span>@melon53</span></p>
-
-    <button class="trade-btn">Offer Trade</button>
-  </article>
-</section>
-
-<footer>
-  <p>&copy; 2025 by Mystery Marvels. All rights reserved.</p>
-</footer>
- 
-    
-  </body>
-
-        
+    // 2) Date sort
+    document.getElementById('sort').addEventListener('change', e => {
+      const newestFirst = e.target.value === 'newest';
+      items.sort((a, b) => {
+        const da = new Date(a.dataset.date);
+        const db = new Date(b.dataset.date);
+        return newestFirst ? db - da : da - db;
+      }).forEach(item => board.appendChild(item));
+    });
+  </script>
+</body>
+</html>
