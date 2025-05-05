@@ -1,0 +1,30 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Send a message!</title>
+  <!-- reuse your existing stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="popup-body">
+  <h1 class="popup-header">Send a message!</h1>
+  <textarea id="popup-text" class="popup-textarea"
+            placeholder="Type your offer here…" rows="6"></textarea>
+  <button id="popup-submit" class="popup-submit">Submit</button>
+
+  <!-- optional: extract this into popup.js if you like -->
+  <script>
+    // close on Esc
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') window.close();
+    });
+    document.getElementById('popup-submit').addEventListener('click', () => {
+      const msg = document.getElementById('popup-text').value.trim();
+      if (!msg) return alert('Please enter a message.');
+      window.opener.postMessage({ type: 'tradeMessage', content: msg }, '*');
+      window.close();
+    });
+  </script>
+</body>
+</html>

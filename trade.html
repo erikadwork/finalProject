@@ -25,15 +25,15 @@
     <h1 class="trade-header">Got Dupes?</h1>
     <br>
     <img src="images/trade.jpg" class="trade-img" alt="Trading banner">
-
-    <p>
-      Our trading hub makes it easy to swap unwanted duplicates with fellow collectors.
-      List your spare item in seconds using the quick-post buttons, or browse existing 
-      listings until you spot something you’d like. Tapping "Trade" opens a private message
-      window where you can propose a swap; the original poster reviews your offer and accepts
-      or declines with a single click. It’s a simple, community-driven way to keep your collection
-      fresh while helping others complete theirs.
-    </p>
+<br>
+<p class="trade-intro">
+  Our trading hub makes it easy to swap unwanted duplicates with fellow collectors.
+  List your spare item in seconds using the quick-post buttons, or browse existing 
+  listings until you spot something you’d like. Tapping "Offer Trade" opens a private message
+  window where you can propose a swap; the original poster reviews your offer and accepts
+  or declines with a single click. It’s a simple, community-driven way to keep your collection
+  fresh while helping others complete theirs.
+</p>
 
     <br><br><br>
 
@@ -167,5 +167,42 @@
       }).forEach(item => board.appendChild(item));
     });
   </script>
+
+<button class="trade-btn">
+  Offer Trade
+</button>
+
+<script>
+  document.body.addEventListener('click', e => {
+    if (!e.target.matches('.trade-btn')) return;
+
+    const w = 400, h = 300;
+    const dualLeft = window.screenLeft ?? window.screenX;
+    const dualTop  = window.screenTop  ?? window.screenY;
+    const inW = window.innerWidth  || document.documentElement.clientWidth;
+    const inH = window.innerHeight || document.documentElement.clientHeight;
+    const left = dualLeft + Math.round((inW - w)/2);
+    const top  = dualTop  + Math.round((inH - h)/2);
+
+    window.open(
+      'popup.html',               // your new standalone file
+      'tradeWindow',
+      `width=${w},height=${h},left=${left},top=${top},` +
+      `menubar=no,toolbar=no,status=no,resizable=yes`
+    );
+  });
+
+  // (Optional) Listen for the message from the popup
+  window.addEventListener('message', e => {
+    if (e.data?.type === 'tradeMessage') {
+      console.log('Got offer message:', e.data.content);
+      // TODO: send e.data.content & poster back to your server…
+    }
+  });
+</script>
+
+
+
+
 </body>
 </html>

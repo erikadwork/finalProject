@@ -21,10 +21,10 @@
 
     <br><br>
 
-    <div class="lead-image">
+    <div class="lead-image animate-on-scroll">
       <img src="images/leadimage3.jpg" alt="Lead Image">
     </div>
-    <div class="lead-text">
+    <div class="lead-text animate-on-scroll">
       <br><br>
       <h1 class="subtext">Diving into the Unknown</h1>
       <br>
@@ -34,44 +34,66 @@
         Our upcoming features include unboxing videos, photo galleries of limited-edition finds, honest reviews and so much more. Browse our growing community of collectors who share tips, trades, and stories about discovering that elusive item they’ve been searching for. Here, the box itself is only the beginning; it’s the excitement and community that truly bring our site to life.
       </p>
     </div>
-
+    
     <br><br>
-
-    <h1>Series of the Month</h1>
+    
+    <h1 class="series-title animate-on-scroll">Series of the Month</h1>
     <br>
-
+    
     <section class="showcase">
-      <div class="showcase-item">
+      <div class="showcase-item animate-on-scroll">
         <h3>Smiskis</h3>
         <img src="images/showcase1.jpg" alt="Showcase Image 1">
         <p>
           These strangely cute green human figures push the limits of traditional collectibles. Their simple design and vibrant green color creates a unique glow in the dark effect!
         </p>
-        <button class="learn-more">Learn more here!</button>
+        <a href="reviews.html">
+          <button class="learn-more">Learn more here!</button>
+        </a>
       </div>
-
-      <div class="showcase-item">
+    
+      <div class="showcase-item animate-on-scroll">
         <h3>Sonny Angels</h3>
         <img src="images/showcase2.jpg" alt="Showcase Image 2">
         <p>
           Sonny Angels are known for their cute designs—a series of baby figures dressed in a variety of creative costumes that always guarantee a charming appeal.
         </p>
         <br>
-        <button class="learn-more">Learn more here!</button>
+        <a href="https://www.sonnyangel.com/en/">
+          <button class="learn-more">Learn more here!</button>
+        </a>
       </div>
-
-      <div class="showcase-item">
+    
+      <div class="showcase-item animate-on-scroll">
         <h3>Pino Jelly</h3>
         <img src="images/showcase3.jpg" alt="Showcase Image 3">
         <p>
           The "Pino Jelly" series is one of Pop Mart's most endearing lines, boasting playful and cutesy aesthetics with vibrant colors that evoke joy and wonder.
         </p>
         <br>
-        <button class="learn-more">Learn more here!</button>
+        <a href="https://www.popmartworld.com/brand/pino-jelly">
+          <button class="learn-more">Learn more here!</button>
+        </a>
       </div>
     </section>
-  </div> 
-
+    
+    <!-- put this at the very end of your <body> -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+    
+        document.querySelectorAll('.animate-on-scroll')
+                .forEach(el => observer.observe(el));
+      });
+    </script>
+    
   <footer>
     <p>&copy; 2025 by Mystery Marvels. All rights reserved.</p>
   </footer>
