@@ -53,7 +53,7 @@ p, section, article {
   color: #fffeff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
 }
 .site-nav nav a:hover {
   text-decoration: underline;
@@ -312,6 +312,57 @@ footer {
   height: 500px;                    /* ► banner height ◄ */
   object-fit: cover;                /* crop top / bottom */
   border-radius: 0.75rem;           /* optional rounding */
+}
+/* Pastel-style table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.table thead {
+  background: linear-gradient(135deg, #fce4ec 0%, #c6a7b2 100%);
+}
+
+.table thead th {
+  color: #333;
+  padding: 0.75rem 1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.table tbody tr {
+  transition: background 0.3s ease;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #fdf2f8;
+}
+
+.table tbody tr:hover {
+  background: #ffe4ec;
+}
+
+.table td {
+  padding: 0.75rem 1rem;
+  color: #555;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #a68e97;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Highlight the “Most popular” cell */
+.table td strong {
+  color: #d81b60;
 }
 
 
@@ -593,22 +644,22 @@ footer {
 .team-member h2 {
   margin: 0;
   font-size: 1.25rem;
-  text-align: left;          /* explicitly left-align the title */
-  color: #6d87b1;               /* pick any hex, rgb(), or named color */
-  font-family: 'Montserrat', sans-serif;  /* or whatever font you’ve loaded */
+  text-align: left;         
+  color: #6d87b1;              
+  font-family: 'Montserrat', sans-serif;  
 }
 
 .team-member {
   display: flex;
-  flex-direction: row;      /* image on left, text on right */
-  align-items: flex-start;  /* align image and text at their top edges */
+  flex-direction: row;      
+  align-items: flex-start; 
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
 
 
 
-/* photo */
+
 .team-member img {
   width: 130px;
   height: 130px;
@@ -625,21 +676,21 @@ footer {
 }
 
 
-/* mobile: stack vertically */
+
 @media (max-width: 600px) {
   .team-member {
     flex-direction: column;
     text-align: center;
   }
 }
-/* reset any stray spacing */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* scrollable viewport */
+
 .worldmap-container {
   width: 900px;
   overflow-x: auto;    /* horizontal scroll */
@@ -650,26 +701,25 @@ footer {
   border-radius: 4px;
 }
 
-/* map wrapper (shrink-wraps to the image) */
 .worldmap {
   position: relative;
   display: inline-block;
 }
 
-/* the actual map image */
+
 .worldmap-base {
   display: block;
-  width: 1400px;  /* or your image’s natural width */
+  width: 1400px;  
   height: auto;
 }
 
 
 
-/* tooltip styling via the title attribute */
+
 .worldmap-item::after {
   content: attr(title);
   position: absolute;
-  bottom: 125%;            /* place tooltip above the icon */
+  bottom: 125%;            
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
@@ -684,48 +734,34 @@ footer {
   z-index: 10;
 }
 
-/* reveal tooltip on hover */
+
 .worldmap-item:hover::after {
   opacity: 1;
 }
 
-/* icon color */
-.icon-blue {
-  color: #007bff;
-}
 
-/* individual pin positions */
-#worldmap-item-shoe {
-  top: 200px;
-  left: 440px;
-}
-
-#worldmap-item-book {
-  top: 535px;
-  left: 374px;
-}
 
 .profile-section {
   display: flex;
-  align-items: flex-start;   /* top-align image & text */
-  gap: 24px;                  /* space between image & text */
-  margin: 40px auto;          /* vertical spacing between sections */
-  max-width: 900px;           /* constrain width if you like */
+  align-items: flex-start;   
+  gap: 24px;                 
+  margin: 40px auto;        
+  max-width: 900px;          
 }
 
 .profile-img {
-  width: 150px;     /* whatever size you like */
+  width: 150px;    
   height: auto;
   border-radius: 4px;
   object-fit: cover;
 }
 
 .profile-text {
-  flex: 1;                    /* take remaining space */
+  flex: 1;                   
 }
 
 .profile-text h3 {
-  color: #5e7d6a;             /* same blue as your icons */
+  color: #5e7d6a;           
   font-size: 1.6rem;
   margin-bottom: 8px;
 }
@@ -746,4 +782,79 @@ footer {
 .animate-on-scroll.visible {
   opacity: 1;
   transform: translateY(0);
+}
+/* === Buddies grid (4 across) === */
+.buddies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.buddies-grid figure {
+  /* enforce a uniform aspect ratio */
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+.buddies-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fill the figure box without distortion */
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.buddies-grid figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* === Popular spots grid (3 across) === */
+.spots-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.spots-grid figure {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+.spots-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.spots-grid figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* === Image float & rounding styles === */
+.float-left {
+  float: left;
+  width: 250px;           /* make images a bit larger */
+  height: auto;           /* preserve aspect ratio */
+  margin: 0 1rem 1rem 0;   /* space: top | right | bottom | left */
+  object-fit: cover;      /* crop/scale to fill without distortion */
+  border-radius: 12px;     /* softly rounded corners */
+}
+
+.float-right {
+  float: right;
+  width: 250px;
+  height: auto;
+  margin: 0 0 1rem 1rem;   /* space: top | right | bottom | left */
+  object-fit: cover;
+  border-radius: 12px;
 }

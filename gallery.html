@@ -1,65 +1,59 @@
 <head>
-    <meta charset="UTF-8" />
-    <title>The Beauty Of A Mystery</title>
-    <link rel="stylesheet" href="style.css">
-  
-  
-  </head>
+  <meta charset="UTF-8" />
+  <title>The Beauty Of A Mystery</title>
+  <link rel="stylesheet" href="style.css">
 
-  <body>
-    <div class="wrapper">
-      <div class="site-nav">
-        <img src="images/logo.png" alt="Site Logo" class="site-logo">
-        <nav>
-          <a href="home.html">Home</a>
-          <a href="trade.html">Trade</a>
-          <a href="reviews.html">Reviews</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="about.html">About</a>
-          <a href="map.html">Sample Collection</a>
-        </nav>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="site-nav">
+      <img src="images/logo.png" alt="Site Logo" class="site-logo">
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="trade.html">Trade</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="map.html">Sample Collection</a>
+        <a href="collectorstory.html">A Collector's Story</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </div>
+
+    <br><br>
+
+    <!-- ▾▾ inside your <body> where the old slideshow sat ▾▾ -->
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/carousel1.webp" alt="slide 1">
+
       </div>
 
-      <br><br>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/carousel2.webp" alt="slide 2">
 
-     <!-- ▾▾ inside your <body> where the old slideshow sat ▾▾ -->
-<div class="slideshow-container">
+      </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 4</div>
-    <img src="images/carousel1.jpg" alt="slide 1">
-    <div class="text">Caption One</div>
-  </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/carousel3.webp" alt="slide 3">
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 4</div>
-    <img src="images/carousel2.jpg" alt="slide 2">
-    <div class="text">Caption Two</div>
-  </div>
+      </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 4</div>
-    <img src="images/carousel3.jpg" alt="slide 3">
-    <div class="text">Caption Three</div>
-  </div>
+    </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 4</div>
-    <img src="images/carousel4.jpg" alt="slide 4">
-    <div class="text">Caption Four</div>
-  </div>
+    <!-- dots -->
+    <div class="dots-wrap">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
 
-</div>
+    </div>
 
-<!-- dots -->
-<div class="dots-wrap">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>   <!-- NEW 4th dot -->
-</div>
-
-<script>
+    <script>
   
   
 let slideIndex = 1;        // start on the first slide
@@ -86,64 +80,162 @@ function showSlides(n) {
 }
 </script>
 
-      <br><br>
-      
+    <br><br>
 
-<br><br>
-        <h2> Top Collectibles </h2>
-        <div class="grid-container">
-          <!-- Top row images: positioned in columns 1, 3, and 5 -->
-          <figure class="top-image image1">
-            <img src="images/gallery1.jpg" alt="Image 1">
-            <figcaption>Smiskis</figcaption>
-          </figure>
-          <figure class="top-image image2">
-            <img src="images/gallery2.jpg" alt="Image 2">
-            <figcaption>Skullpanda</figcaption>
-          </figure>
-          <figure class="top-image image3">
-            <img src="images/gallery3.jpg" alt="Image 3">
-            <figcaption>Hirono</figcaption>
-          </figure>
-        
-          <!-- Bottom row images: positioned in columns 2 and 4 -->
-          <figure class="bottom-image image4">
-            <img src="images/gallery4.jpg" alt="Image 4">
-            <figcaption>Sonny Angels</figcaption>
-          </figure>
-          <figure class="bottom-image image5">
-            <img src="images/gallery5.jpg" alt="Image 5">
-            <figcaption>Peach Riot</figcaption>
-          </figure>
-        </div>
+    <br><br>
+    <h2> Top Collectibles </h2>
+    <div class="grid-container">
+      <!-- Top row images: positioned in columns 1, 3, and 5 -->
+      <figure class="top-image image1">
+        <img src="images/gallery1.jpg" alt="Image 1">
+        <figcaption>Smiskis</figcaption>
+      </figure>
+      <figure class="top-image image2">
+        <img src="images/gallery2.jpg" alt="Image 2">
+        <figcaption>Skullpanda</figcaption>
+      </figure>
+      <figure class="top-image image3">
+        <img src="images/gallery3.jpg" alt="Image 3">
+        <figcaption>Hirono</figcaption>
+      </figure>
 
-        <h2> What to do with your buddies! </h2>
+      <!-- Bottom row images: positioned in columns 2 and 4 -->
+      <figure class="bottom-image image4">
+        <img src="images/gallery4.jpg" alt="Image 4">
+        <figcaption>Sonny Angels</figcaption>
+      </figure>
+      <figure class="bottom-image image5">
+        <img src="images/gallery5.jpg" alt="Image 5">
+        <figcaption>Peach Riot</figcaption>
+      </figure>
+    </div>
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-         mollit anim id est laborum.
+    <p>Among the most sought-after blind-box lines are Smiskis, the
+      glow-in-the-dark little creatures available in popular sets like the
+      Sunday, Museum, and Hippers series—each box hiding one of several charming
+      pocket pals. Sonny Angel figures have skyrocketed in popularity; these
+      tiny cherub-like dolls in themes like Animal, Birthday Gift Bear, and
+      Hippers series fetch must-have status among collectors thanks to their
+      novelty headgear and secret editions. Skullpanda blends whimsical design
+      with everyday utility—featured in Pop Mart’s Sound, Warmth, and Addams
+      Family series, these cable-dangling pandas double as décor and functional
+      accessories. Peach Riot brings bold color and attitude to the blind-box
+      scene with its Rise Up series of 12 collectible vinyl figures (including
+      chase variants), each figure standing around 4–5 inches tall and perfect
+      for desks or shelf displays. Finally, Hirono’s artist-designed figurines
+      explore emotional nuance and narrative—Pop Mart’s Shelter and Tapestry
+      collections showcase 12 unique designs per set, often including rare
+      “secret” pieces that drive the thrill of the unknown.
+    </p>
 
-        <h2> How to take care of them</h2>
+    <br>
+    <table class = "table">
+      <thead>
+        <tr>
+          <th>Series</th>
+          <th>Avg. Rating</th>
+          <th># of Ratings</th>
+          <th>Popularity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Smiskis</td>
+          <td>4.6 / 5</td>
+          <td>317</td>
+          <td>Moderate</td>
+        </tr>
+        <tr>
+          <td>Sonny Angel Hippers</td>
+          <td>4.4 / 5</td>
+          <td>1,106</td>
+          <td><strong>Most popular</strong></td>
+        </tr>
+        <tr>
+          <td>Skullpanda<br><small>(Image of Reality)</small></td>
+          <td>4.8 / 5</td>
+          <td>276</td>
+          <td>Moderate</td>
+        </tr>
+        <tr>
+          <td>Peach Riot<br><small>(Punk Fairy)</small></td>
+          <td>4.7 / 5</td>
+          <td>343</td>
+          <td>Moderate</td>
+        </tr>
+        <tr>
+          <td>Hirono<br><small>(The Other One)</small></td>
+          <td>4.6 / 5</td>
+          <td>670</td>
+          <td>High</td>
+        </tr>
+      </tbody>
+    </table>
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-         mollit anim id est laborum.
+    <br><br>
+    <h2>What to do with your buddies!</h2>
+    <div class="buddies-grid">
+      <figure>
+        <img src="images/gallery6.jpg" alt="Buddies Activity 1">
 
-        <h2>Popular spots to find mystery boxes</h2>
+      </figure>
+      <figure>
+        <img src="images/gallery7.jpg" alt="Buddies Activity 2">
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-         mollit anim id est laborum.
+      </figure>
+      <figure>
+        <img src="images/gallery8.jpg" alt="Buddies Activity 3">
 
-         <footer>
-          <p>&copy; 2025 by Mystery Marvels. All rights reserved.</p>
-        </footer>
+      </figure>
+      <figure>
+        <img src="images/gallery9.jpg" alt="Buddies Activity 4">
+
+      </figure>
+    </div>
+
+    <p>
+      So you’ve finally got your collection of little figures—now comes the fun
+      part! You can just line them up on a shelf or tuck them safely into a
+      keepsake box, but if you’re feeling crafty, stick them into a cute book
+      nook or shadow box to give ’em a mini world of their own. Some people even
+      whip up tiny accessories—little hats, scarves, or ring‐holders—so their
+      figures can rock different looks or hold your favorite jewelry. And don’t
+      forget about everyday carry: clip a Smiski or two onto your phone case,
+      keychain, or backpack zipper. Speaking of Smiski, their new “Hippers”
+      series is perfect for hooking onto phones, computer monitors, and pretty
+      much anything you want to spice up with a sneaky little buddy.
+
+    </p>
+
+    <br><br>
+    <h2>Popular spots to find mystery boxes</h2>
+    <div class="spots-grid">
+      <figure>
+        <img src="images/gallery10.webp" alt="Mystery Box Spot 1">
+        <figcaption>Downtown Arcade</figcaption>
+      </figure>
+      <figure>
+        <img src="images/gallery11.jpg" alt="Mystery Box Spot 2">
+        <figcaption>Night Market</figcaption>
+      </figure>
+      <figure>
+        <img src="images/gallery12.jpg" alt="Mystery Box Spot 3">
+        <figcaption>Collector’s Shop</figcaption>
+      </figure>
+    </div>
+
+    <p>
+      If you’re on the hunt for blind boxes, you can’t go wrong with spots like
+      Miniso! They always seem to have fresh series at
+      super reasonable prices. Kinokuniya is a treasure trove if you want
+      something a bit more niche or imported, with shelves full of Japanese and
+      anime-themed surprises. Of course, Pop Mart’s official stores (and their
+      online shop) are the go-to for all the latest series drops and exclusive
+      collabs. Beyond those, you’ll also find cool blind-box selections at
+      specialty toy boutiques, hobby shops, and even places like Urban
+      Outfitters or Barnes & Noble when they host their collectible pop-ups.
+
+    </p>
+    <footer>
+      <p>&copy; 2025 by Mystery Marvels. All rights reserved.</p>
+    </footer>

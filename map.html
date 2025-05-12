@@ -1,231 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>My Figurine Collection Map</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Figurine Collection Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Font Awesome for marker icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-p1CmVfG+Y5eoYzEIXhi5cH01v1IE8iUzIFlQcuwWG/+4QD3IGMjNldJOk0owu5+Rk17Q8X7YXeF2raKq6l5r5Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    <!-- Font Awesome for marker icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-p1CmVfG+Y5eoYzEIXhi5cH01v1IE8iUzIFlQcuwWG/+4QD3IGMjNldJOk0owu5+Rk17Q8X7YXeF2raKq6l5r5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="wrapper">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
 
-    <div class="site-nav">
-      <img src="images/logo.png" alt="Site Logo" class="site-logo" />
-      <nav>
-        <a href="home.html">Home</a>
-        <a href="trade.html">Trade</a>
-        <a href="reviews.html">Reviews</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About</a>
-        <a href="map.html">Sample Collection</a>
-      </nav>
-    </div>
-    <br><br>
-    <h1>Sample Figure Collection Map</h1>
+      <div class="site-nav">
+        <img src="images/logo.png" alt="Site Logo" class="site-logo" />
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="trade.html">Trade</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="map.html">Sample Collection</a>
+          <a href="collectorstory.html">A Collector's Story</a>
+          <a href="about.html">About Us</a>
+        </nav>
+      </div>
+      <br><br>
+      <h1>Sample Figure Collection Map</h1>
 
+      <div class="worldmap-container">
+        <div class="worldmap">
+          <!-- Map image with usemap -->
+          <img
+            src="images/map.jpg"
+            alt="My Figurine Collection Map"
+            class="worldmap-base"
+            usemap="#collection-map" />
 
+          <!-- Define clickable regions -->
+          <map name="collection-map">
+           
+          </map>
+        </div>
+      </div>
 
-<div class="worldmap-container">
-  <div class="worldmap">
-    <!-- Map image with usemap -->
-    <img
-      src="images/map.jpg"
-      alt="My Figurine Collection Map"
-      class="worldmap-base"
-      usemap="#collection-map"
-    />
+      
 
-    <!-- Define clickable regions -->
-    <map name="collection-map">
+      <p>This interactive map showcases one of our personal
+        collections—each pinpoint marks a favorite figurine or
+        collectible we’ve discovered over time. By overlaying
+        our personal story in this format, we hope to
+        encourage you on your own collecting passion! From real Smiskis
+        and fan-made Smiski stickers to special collabs like McDonald’s
+        × Minecraft and Haikyu! keychains, every piece represents a
+        unique find and the excitement of the hunt. We hope this inspires
+        fellow enthusiasts to chart their own collections, share their
+        discoveries,
+        and celebrate the joy of gathering those special pieces that make
+        collecting so rewarding.</p>
+
       <!-- Sony Angel -->
-      <area
-        shape="rect"
-        coords="440,200,464,224"
-        href="#sony-angel"
-        title="Sony Angel"
-        alt="Sony Angel"
-      />
+      <section id="sony-angel" class="profile-section">
+        <img
+          src="images/sonyangel.jpg"
+          alt="Sony Angel Figurine"
+          class="profile-img" />
+        <div class="profile-text">
+          <h3>Sony Angel</h3>
+          <p>
+            Currently writing
+          </p>
+        </div>
+      </section>
+
       <!-- Smiskis -->
-      <area
-        shape="rect"
-        coords="374,535,398,559"
-        href="#smiskis"
-        title="Smiskis"
-        alt="Smiskis"
-      />
-      <!-- McDonald's × Minecraft -->
-      <area
-        shape="rect"
-        coords="500,300,524,324"
-        href="#mcdonalds-minecraft"
-        title="McDonald's × Minecraft Figurine"
-        alt="McDonald's × Minecraft Figurine"
-      />
+      <section id="smiskis" class="profile-section">
+        <img
+          src="images/smiskicheer.png"
+          alt="Smiskis Figurine"
+          class="profile-img" />
+        <div class="profile-text">
+          <h3>Smiskis</h3>
+          <p>
+            Currently writing
+          </p>
+        </div>
+      </section>
+
+      <!-- McDonald's x Minecraft Figurine -->
+      <section id="mcdonalds-minecraft" class="profile-section">
+        <img
+          src="images/grimaceegg.jpg"
+          alt="McDonald's x Minecraft Figurine"
+          class="profile-img" />
+        <div class="profile-text">
+          <h3>McDonald's × Minecraft Figurine</h3>
+          <p>
+            Currently writing
+          </p>
+        </div>
+      </section>
+
       <!-- Lulu Figurine -->
-      <area
-        shape="rect"
-        coords="600,250,624,274"
-        href="#lulu-figurine"
-        title="Lulu Figurine"
-        alt="Lulu Figurine"
-      />
-      <!-- Haikyu!! Keychain -->
-      <area
-        shape="rect"
-        coords="700,350,724,374"
-        href="#haikyu-keychain"
-        title="Haikyu!! Keychain"
-        alt="Haikyu!! Keychain"
-      />
+      <section id="lulu-figurine" class="profile-section">
+        <img
+          src="images/lulu.webp"
+          alt="Lulu Figurine"
+          class="profile-img" />
+        <div class="profile-text">
+          <h3>Lulu Figurine</h3>
+          <p>
+            Currently writing
+          </p>
+        </div>
+      </section>
+
+      <!-- Haikyu Keychain -->
+      <section id="haikyu-keychain" class="profile-section">
+        <img
+          src="images/oikawa.jpg"
+          alt="Haikyu Keychain"
+          class="profile-img" />
+        <div class="profile-text">
+          <h3>Haikyu!! Keychain</h3>
+          <p>
+            Currently writing
+          </p>
+        </div>
+      </section>
+
       <!-- Smiski Stickers -->
-      <area
-        shape="rect"
-        coords="800,300,824,324"
-        href="#smiski-stickers"
-        title="Smiski Stickers"
-        alt="Smiski Stickers"
-      />
-      <!-- Haikyu!! Figurine -->
-      <area
-        shape="rect"
-        coords="900,400,924,424"
-        href="#haikyu-figurine"
-        title="Haikyu!! Figurine"
-        alt="Haikyu!! Figurine"
-      />
-    </map>
-  </div>
-</div>
+      <section id="smiski-stickers" class="profile-section">
+        <img
+          src="images/stickers.jpg"
+          alt="Smiski Stickers"
+          class="profile-img" />
+        <div class="profile-text">
+          <h3>Smiski Stickers</h3>
+          <p>
+            Currently writing
+          </p>
+        </div>
+      </section>
 
-<p>This interactive map showcases one of our personal
-   collections—each pinpoint marks a favorite figurine or 
-   collectible we’ve discovered over time. By overlaying 
-   our personal story in this format, we hope to
-  encourage you on your own collecting passion! From real Smiskis 
-  and fan-made Smiski stickers to special collabs like McDonald’s
-  × Minecraft and Haikyu! keychains, every piece represents a
-  unique find and the excitement of the hunt. We hope this inspires
-  fellow enthusiasts to chart their own collections, share their discoveries,
-  and celebrate the joy of gathering those special pieces that make
-  collecting so rewarding.</p>
-
-    
-   <!-- Sony Angel -->
-<section id="sony-angel" class="profile-section">
-  <img
-    src="images/sonyangel.jpg"
-    alt="Sony Angel Figurine"
-    class="profile-img"
-  />
-  <div class="profile-text">
-    <h3>Sony Angel</h3>
-    <p>
-      Currently writing
-    </p>
-  </div>
-</section>
-
-<!-- Smiskis -->
-<section id="smiskis" class="profile-section">
-  <img
-    src="images/smiskicheer.png"
-    alt="Smiskis Figurine"
-    class="profile-img"
-  />
-  <div class="profile-text">
-    <h3>Smiskis</h3>
-    <p>
-      Currently writing
-    </p>
-  </div>
-</section>
-
-<!-- McDonald's x Minecraft Figurine -->
-<section id="mcdonalds-minecraft" class="profile-section">
-  <img
-    src="images/grimaceegg.jpg"
-    alt="McDonald's x Minecraft Figurine"
-    class="profile-img"
-  />
-  <div class="profile-text">
-    <h3>McDonald's × Minecraft Figurine</h3>
-    <p>
-      Currently writing
-    </p>
-  </div>
-</section>
-
-<!-- Lulu Figurine -->
-<section id="lulu-figurine" class="profile-section">
-  <img
-    src="images/lulu.webp"
-    alt="Lulu Figurine"
-    class="profile-img"
-  />
-  <div class="profile-text">
-    <h3>Lulu Figurine</h3>
-    <p>
-      Currently writing
-    </p>
-  </div>
-</section>
-
-<!-- Haikyu Keychain -->
-<section id="haikyu-keychain" class="profile-section">
-  <img
-    src="images/oikawa.jpg"
-    alt="Haikyu Keychain"
-    class="profile-img"
-  />
-  <div class="profile-text">
-    <h3>Haikyu!! Keychain</h3>
-    <p>
-      Currently writing
-    </p>
-  </div>
-</section>
-
-<!-- Smiski Stickers -->
-<section id="smiski-stickers" class="profile-section">
-  <img
-    src="images/stickers.jpg"
-    alt="Smiski Stickers"
-    class="profile-img"
-  />
-  <div class="profile-text">
-    <h3>Smiski Stickers</h3>
-    <p>
-      Currently writing
-    </p>
-  </div>
-</section>
-
-<!-- Haikyu Figurine -->
-<section id="haikyu-figurine" class="profile-section">
-  <img
-    src="images/kenma.jpg"
-    alt="Haikyu Figurine"
-    class="profile-img"
-  />
-  <div class="profile-text">
-    <h3>Haikyu!! Figurine</h3>
-    <p>
-      Currently writing
-    </p>
-  </div>
-</section>
-<footer>
-  <p>&copy; 2025 by Mystery Marvels. All rights reserved.</p>
-</footer>
-</body>
-</html>
+      <!-- Haikyu Figurine -->
+      <section id="haikyu-figurine" class="profile-section">
+        <img
+          src="images/kenma.jpg"
+          alt="Haikyu Figurine"
+          class="profile-img" />
+        <div class="profile-text">
+          <h3>Haikyu!! Figurine</h3>
+          <p>
+            Currently writing
+          </p>
+        </div>
+      </section>
+      <footer>
+        <p>&copy; 2025 by Mystery Marvels. All rights reserved.</p>
+      </footer>
+    </body>
+  </html>
