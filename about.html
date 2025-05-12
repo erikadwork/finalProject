@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>The Beauty Of A Mystery</title>
-    <link rel="stylesheet" href="style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <div class="wrapper">
+      
       <div class="site-nav">
-        <img src="images/logo.png" alt="Site Logo" class="site-logo">
+        <img src="images/logo.png" alt="Site Logo" class="site-logo" />
         <nav>
           <a href="home.html">Home</a>
           <a href="trade.html">Trade</a>
@@ -22,113 +22,80 @@
           <a href="about.html">About Us</a>
         </nav>
       </div>
-      <div class="right">
-        <!-- Additional content can go here if needed -->
-      </div>
-    </nav>
 
-    <br><br>
-    <h1>About Us!</h1>
-    <br>
+      <br><br>
+
+ 
+      <h1 class="animate-on-scroll">About Us!</h1>
+      <br>
+
+   
+      <p class="animate-on-scroll">
+        Mystery Marvel is a passionate group of enthusiasts dedicated to discovering the secrets and delights hidden in the world of blind boxes. Our mission, as a group of curious collectors and reviewers, is to explore, unbox, and share the fascinating stories behind each mystery package we come across.
+      
+        We delve into the art, rarity, and surprise of each box, providing insightful reviews, thoughtful analysis, and a dash of playful speculation to help you navigate the exciting world of collectible curiosities. At Mystery Marvel, we're more than just a review group; we're a community united by the joy of discovery, always on the lookout for the next incredible find!
+     
+        Driven by a love of the unexpected and a commitment to quality, we are constantly on the lookout for the latest trends and most unique finds from established and emerging creators. Our platform is a dynamic resource, bringing together like-minded collectors and enthusiasts in a vibrant network where ideas thrive and each unboxing is a new adventure.
+      </p>
+
+      <div class="clear"></div>
+
+      <section class="team">
+        <h1 class="animate-on-scroll">Meet the Team</h1>
+
+        <article class="team-member animate-on-scroll">
+          <img src="images/team1.webp" alt="Diane portrait" />
+          <div class="info">
+            <h2>Diane</h2>
+            <p class="role">
+              Meet our Content Manager: Diane—an avid collector herself, she spends most of her time (and money...) on building her figurine collection. With the company since day one, she's passionate about sharing her own experiences and inspiring others to join.
+            </p>
+          </div>
+        </article>
+
+        <article class="team-member animate-on-scroll">
+          <img src="images/team2.webp" alt="Alex portrait" />
+          <div class="info">
+            <h2>Alex</h2>
+            <p class="role">
+              Meet our Researcher: Alex is our resident coffee fiend, powering through mystery-box research one espresso shot at a time. Off the clock, he conquers video game worlds and meticulously assembles Gundams, LEGO sets, and anything else with tiny pieces—never missing a chance for a perfectly timed prank!
+            </p>
+          </div>
+        </article>
+
+        <article class="team-member animate-on-scroll">
+          <img src="images/team3.jpg" alt="Rupert portrait" />
+          <div class="info">
+            <h2>Rupert</h2>
+            <p class="role">
+              Introducing our Multimedia Producer: Rupert—a relentlessly enthusiastic, delightfully peculiar creative force whose hard work fuels our mission to spread the thrill of mystery. By day, he’s a self-proclaimed “Pokémon Master,” and by night, his commitment to binge-watching One Piece is nothing short of legendary.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <br><br>
+
+     
+      <footer class="animate-on-scroll">
+        <p>&copy; 2025 by Mystery Marvels. All rights reserved.</p>
+      </footer>
+    </div>
 
     
-    <p>
-      Mystery Marvel is a passionate group of enthusiasts dedicated to
-      discovering the secrets and
-      delights hidden in the world of blind boxes. Our mission, as a group of
-      curious collectors and
-      reviewers, is to explore, unbox, and share the fascinating stories behind
-      each mystery package
-      we come across. We delve into the art, rarity, and surprise of each box,
-      providing insightful
-      reviews, thoughtful analysis, and a dash of playful speculation to help
-      you navigate the exciting
-      world of collectible curiosities. At Mystery Marvel, we're more than just
-      a review group; we're a
-      community united by the joy of discovery, always on the lookout for the
-      next incredible find!
-    </p>
-    <p>
-      Driven by a love of the unexpected and a commitment to quality, we are
-      constantly on the lookout
-      for the latest trends and most unique finds from established and emerging
-      creators. At Mystery
-      Marvel, we combine professional experience with a genuine love of
-      discovery, ensuring that each
-      review not only informs but also inspires our community. Our platform is a
-      dynamic resource,
-      bringing together like-minded collectors and enthusiasts in a vibrant
-      network where ideas thrive
-      and each unboxing is a new adventure. Whether you're an experienced
-      collector or new to the world
-      of blind boxes, we invite you to join us on this exciting journey of
-      discovery and wonder.
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
 
-    </p>
-
-    <div class="clear"></div>
-
-    <section class="team">
-      <h1>Meet the Team</h1>
-
-      <article class="team-member">
-        <img src="images/team1.webp" alt="Rakdcolon portrait">
-        <div class="info">
-          <h2>Diane</h2>
-          <p class="role">Meet our Content Manager: Diane an avid collector
-            herself, she spends most of her time
-            (and money...) on building her collection of figurines. Being with
-            the company since the beginning, she
-            is passionate about sharing her own experiences and hopes to inspire
-            others in joining.
-          </p>
-        </div>
-      </article>
-
-      <article class="team-member">
-        <img src="images/team2.webp" alt="Thesonofsleeping portrait">
-        <div class="info">
-          <h2>Alex</h2>
-          <p class="role">Thought for a couple of seconds
-
-            Meet our Researcher: Alex
-            Alex is our resident coffee fiend, powering through mystery-box
-            research
-            one espresso shot at a time. When he’s off the clock, you’ll find
-            him
-            conquering video game worlds or meticulously assembling Gundams,
-            LEGO sets,
-            and anything else with tiny pieces. And don’t let a lull in the day
-            fool
-            you—Alex never misses a chance to unleash a perfectly timed prank on
-            the team.
-          </p>
-        </div>
-      </article>
-
-      <article class="team-member">
-        <img src="images/team3.jpg" alt="Garlic portrait">
-        <div class="info">
-          <h2>Rupert</h2>
-          <p class="role">
-            Introducing our Multimedia Producer: Rupert—a relentlessly
-            enthusiastic,
-            delightfully peculiar creative force whose hard work fuels our
-            mission
-            to spread the thrill of mystery. By day, he’s a self-proclaimed
-            “Pokémon Master”
-            (yes, he’ll challenge you to a battle), and by night…well, let’s
-            just say
-            his commitment to binge-watching One Piece is nothing short of
-            legendary.
-
-          </p>
-        </div>
-      </article>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 by Mystery Marvels. All rights reserved.</p>
-    </footer>
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+      });
+    </script>
   </body>
 </html>

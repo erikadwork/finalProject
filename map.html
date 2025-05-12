@@ -5,13 +5,14 @@
     <title>My Figurine Collection Map</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Font Awesome for marker icons -->
+  
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-p1CmVfG+Y5eoYzEIXhi5cH01v1IE8iUzIFlQcuwWG/+4QD3IGMjNldJOk0owu5+Rk17Q8X7YXeF2raKq6l5r5Q=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -30,139 +31,286 @@
           <a href="about.html">About Us</a>
         </nav>
       </div>
-      <br><br>
-      <h1>Sample Figure Collection Map</h1>
 
-      <div class="worldmap-container">
+      <br><br>
+      <h1 class="animate-on-scroll">Sample Figure Collection Map</h1>
+
+      <div class="worldmap-container animate-on-scroll">
         <div class="worldmap">
-          <!-- Map image with usemap -->
           <img
             src="images/map.jpg"
             alt="My Figurine Collection Map"
             class="worldmap-base"
-            usemap="#collection-map" />
+            usemap="#collection-map"
+          />
 
-          <!-- Define clickable regions -->
+         
+          <div
+            class="hotspot"
+            style="left:70px; top:200px; width: 120px; height:250px;"
+            onclick="location.href='#sony-angel'"
+          ></div>
+          <div
+            class="hotspot"
+            style="left:200px; top:210px; width:160px; height:200px;"
+            onclick="location.href='#smiskis'"
+          ></div>
+          <div
+            class="hotspot"
+            style="left:370px; top:230px; width: 170px; height: 200px;"
+            onclick="location.href='#mcdonalds-minecraft'"
+          ></div>
+          <div
+            class="hotspot"
+            style="left:600px; top:190px; width:250px; height:250px;"
+            onclick="location.href='#lulu-figurine'"
+          ></div>
+          <div
+            class="hotspot"
+            style="left:840px; top:330px; width: 80px; height:100px;"
+            onclick="location.href='#haikyu-keychain'"
+          ></div>
+          <div
+            class="hotspot"
+            style="left:920px; top:250px; width:210px; height:180px;"
+            onclick="location.href='#smiski-stickers'"
+          ></div>
+          <div
+            class="hotspot"
+            style="left:1210px; top:150px; width:140px; height:300px;"
+            onclick="location.href='#haikyu-figurine'"
+          ></div>
+
+        
           <map name="collection-map">
-           
+            <area
+              shape="rect"
+              coords="70,200,190,450"
+              href="#sony-angel"
+              alt="Sony Angel"
+              title="Sony Angel"
+            />
+            <area
+              shape="rect"
+              coords="200,210,360,410"
+              href="#smiskis"
+              alt="Smiskis"
+              title="Smiskis"
+            />
+            <area
+              shape="rect"
+              coords="370,230,540,430"
+              href="#mcdonalds-minecraft"
+              alt="McDonald's × Minecraft"
+              title="McDonald's × Minecraft"
+            />
+            <area
+              shape="rect"
+              coords="600,190,850,440"
+              href="#lulu-figurine"
+              alt="Lulu Figurine"
+              title="Lulu Figurine"
+            />
+            <area
+              shape="rect"
+              coords="840,330,920,430"
+              href="#haikyu-keychain"
+              alt="Haikyu!! Keychain"
+              title="Haikyu!! Keychain"
+            />
+            <area
+              shape="rect"
+              coords="920,250,1130,430"
+              href="#smiski-stickers"
+              alt="Smiski Stickers"
+              title="Smiski Stickers"
+            />
+            <area
+              shape="rect"
+              coords="1210,150,1350,450"
+              href="#haikyu-figurine"
+              alt="Haikyu!! Figurine"
+              title="Haikyu!! Figurine"
+            />
           </map>
         </div>
       </div>
 
-      
-
-      <p>This interactive map showcases one of our personal
-        collections—each pinpoint marks a favorite figurine or
-        collectible we’ve discovered over time. By overlaying
-        our personal story in this format, we hope to
-        encourage you on your own collecting passion! From real Smiskis
-        and fan-made Smiski stickers to special collabs like McDonald’s
-        × Minecraft and Haikyu! keychains, every piece represents a
-        unique find and the excitement of the hunt. We hope this inspires
-        fellow enthusiasts to chart their own collections, share their
-        discoveries,
-        and celebrate the joy of gathering those special pieces that make
-        collecting so rewarding.</p>
+      <p class="animate-on-scroll">
+        This interactive map showcases one of our personal collections—each
+        pinpoint marks a favorite figurine or collectible we’ve discovered over
+        time. By overlaying our personal story in this format, we hope to
+        encourage you on your own collecting passion! From real Smiskis and
+        fan-made Smiski stickers to special collabs like McDonald’s × Minecraft
+        and Haikyu! keychains, every piece represents a unique find and the
+        excitement of the hunt. We hope this inspires fellow enthusiasts to
+        chart their own collections, share their discoveries, and celebrate the
+        joy of gathering those special pieces that make collecting so rewarding.
+      </p>
 
       <!-- Sony Angel -->
-      <section id="sony-angel" class="profile-section">
+      <section
+        id="sony-angel"
+        class="profile-section animate-on-scroll"
+      >
         <img
           src="images/sonyangel.jpg"
           alt="Sony Angel Figurine"
-          class="profile-img" />
+          class="profile-img"
+        />
         <div class="profile-text">
-          <h3>Sony Angel</h3>
+          <h3>Sonny Angel</h3>
           <p>
-            Currently writing
+            A family friend gifted them this Sonny Angel in a birthday-cake
+            costume for their birthday—it was their very first in the
+            collection. With its soft pastel palette and charming details, it
+            immediately stole the spotlight.
           </p>
         </div>
       </section>
 
       <!-- Smiskis -->
-      <section id="smiskis" class="profile-section">
+      <section id="smiskis" class="profile-section animate-on-scroll">
         <img
           src="images/smiskicheer.png"
           alt="Smiskis Figurine"
-          class="profile-img" />
+          class="profile-img"
+        />
         <div class="profile-text">
           <h3>Smiskis</h3>
           <p>
-            Currently writing
+            These Smiskis come as a matching pair of mini figures, scored in a
+            sweet trade with a friend. They stack perfectly on top of each other,
+            and in their eyes, it was absolutely worth the swap.
           </p>
         </div>
       </section>
 
       <!-- McDonald's x Minecraft Figurine -->
-      <section id="mcdonalds-minecraft" class="profile-section">
+      <section
+        id="mcdonalds-minecraft"
+        class="profile-section animate-on-scroll"
+      >
         <img
           src="images/grimaceegg.jpg"
           alt="McDonald's x Minecraft Figurine"
-          class="profile-img" />
+          class="profile-img"
+        />
         <div class="profile-text">
           <h3>McDonald's × Minecraft Figurine</h3>
           <p>
-            Currently writing
+            Once they heard about the Minecraft × McDonald’s mystery-box collab,
+            they couldn’t resist diving in. Laughter and excited chatter filled
+            the room as each box was unwrapped, each reveal bringing a sweet
+            rush of childhood nostalgia.
           </p>
         </div>
       </section>
 
       <!-- Lulu Figurine -->
-      <section id="lulu-figurine" class="profile-section">
+      <section id="lulu-figurine" class="profile-section animate-on-scroll">
         <img
           src="images/lulu.webp"
           alt="Lulu Figurine"
-          class="profile-img" />
+          class="profile-img"
+        />
         <div class="profile-text">
           <h3>Lulu Figurine</h3>
           <p>
-            Currently writing
+            Exploring the newly opened store, they spotted a mystery box themed
+            after one of their favorite games. When they lifted the lid to find
+            their main character inside, they couldn’t contain their
+            excitement—it was exactly the one they’d been hoping for.
           </p>
         </div>
       </section>
 
       <!-- Haikyu Keychain -->
-      <section id="haikyu-keychain" class="profile-section">
+      <section
+        id="haikyu-keychain"
+        class="profile-section animate-on-scroll"
+      >
         <img
           src="images/oikawa.jpg"
           alt="Haikyu Keychain"
-          class="profile-img" />
+          class="profile-img"
+        />
         <div class="profile-text">
           <h3>Haikyu!! Keychain</h3>
           <p>
-            Currently writing
+            Stumbling across a keychain set from one of their favorite animated
+            series, they couldn’t resist grabbing one. When they finally opened
+            it, they found their go-to character sporting a hilariously
+            unexpected expression—an instant laugh that brightened their day.
           </p>
         </div>
       </section>
 
       <!-- Smiski Stickers -->
-      <section id="smiski-stickers" class="profile-section">
+      <section
+        id="smiski-stickers"
+        class="profile-section animate-on-scroll"
+      >
         <img
           src="images/stickers.jpg"
           alt="Smiski Stickers"
-          class="profile-img" />
+          class="profile-img"
+        />
         <div class="profile-text">
           <h3>Smiski Stickers</h3>
           <p>
-            Currently writing
+            They spotted these custom Smiski stickers at a campus artist alley
+            and, being huge fans of the series, couldn’t walk away. When they
+            peeled back the mystery pack, they were over the moon with how cute
+            and unique each design turned out.
           </p>
         </div>
       </section>
 
       <!-- Haikyu Figurine -->
-      <section id="haikyu-figurine" class="profile-section">
+      <section
+        id="haikyu-figurine"
+        class="profile-section animate-on-scroll"
+      >
         <img
           src="images/kenma.jpg"
           alt="Haikyu Figurine"
-          class="profile-img" />
+          class="profile-img"
+        />
         <div class="profile-text">
           <h3>Haikyu!! Figurine</h3>
           <p>
-            Currently writing
+            Caught up in the excitement of one of their favorite shows, they
+            snagged another mystery box—partly because a friend picked it out,
+            fingers crossed for the perfect character. Sure enough, luck was on
+            their side, and they unboxed exactly who they’d been hoping for.
           </p>
         </div>
       </section>
-      <footer>
+
+      <footer class="animate-on-scroll">
         <p>&copy; 2025 by Mystery Marvels. All rights reserved.</p>
       </footer>
-    </body>
-  </html>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                obs.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        document
+          .querySelectorAll(".animate-on-scroll")
+          .forEach((el) => observer.observe(el));
+      });
+    </script>
+  </body>
+</html>

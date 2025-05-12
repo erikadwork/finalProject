@@ -1,12 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>The Beauty Of A Mystery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
   <div class="wrapper">
+    <!-- nav remains static, no animation class -->
     <div class="site-nav">
       <img src="images/logo.png" alt="Site Logo" class="site-logo">
       <nav>
@@ -22,70 +24,50 @@
 
     <br><br>
 
-    <!-- ▾▾ inside your <body> where the old slideshow sat ▾▾ -->
+    <!-- slideshow: no animation class -->
     <div class="slideshow-container">
-
       <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
         <img src="images/carousel1.webp" alt="slide 1">
-
       </div>
-
       <div class="mySlides fade">
         <div class="numbertext">2 / 3</div>
         <img src="images/carousel2.webp" alt="slide 2">
-
       </div>
-
       <div class="mySlides fade">
         <div class="numbertext">3 / 3</div>
         <img src="images/carousel3.webp" alt="slide 3">
-
       </div>
-
     </div>
-
-    <!-- dots -->
     <div class="dots-wrap">
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
-
     </div>
 
+    <!-- slideshow script (unchanged) -->
     <script>
-  
-  
-let slideIndex = 1;        // start on the first slide
-showSlides(slideIndex);
-
-/* user clicks a dot */
-function currentSlide(n) { showSlides(slideIndex = n); }
-
-/* auto-advance */
-setInterval(() => showSlides(++slideIndex), 5000);  // 5-second cadence
-
-function showSlides(n) {
-  const slides = document.getElementsByClassName("mySlides");
-  const dots   = document.getElementsByClassName("dot");
-
-  if (n > slides.length) { slideIndex = 1; }
-  if (n < 1)             { slideIndex = slides.length; }
-
-  Array.from(slides).forEach(s => s.style.display = "none");
-  Array.from(dots).forEach(d => d.classList.remove("active"));
-
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].classList.add("active");
-}
-</script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      function currentSlide(n) { showSlides(slideIndex = n); }
+      setInterval(() => showSlides(++slideIndex), 5000);
+      function showSlides(n) {
+        const slides = document.getElementsByClassName("mySlides");
+        const dots   = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1; }
+        if (n < 1)             { slideIndex = slides.length; }
+        Array.from(slides).forEach(s => s.style.display = "none");
+        Array.from(dots).forEach(d => d.classList.remove("active"));
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add("active");
+      }
+    </script>
 
     <br><br>
 
-    <br><br>
-    <h2> Top Collectibles </h2>
-    <div class="grid-container">
-      <!-- Top row images: positioned in columns 1, 3, and 5 -->
+    <!-- apply animation to heading -->
+    <h2 class="animate-on-scroll">Top Collectibles</h2>
+    <div class="grid-container animate-on-scroll">
       <figure class="top-image image1">
         <img src="images/gallery1.jpg" alt="Image 1">
         <figcaption>Smiskis</figcaption>
@@ -98,8 +80,6 @@ function showSlides(n) {
         <img src="images/gallery3.jpg" alt="Image 3">
         <figcaption>Hirono</figcaption>
       </figure>
-
-      <!-- Bottom row images: positioned in columns 2 and 4 -->
       <figure class="bottom-image image4">
         <img src="images/gallery4.jpg" alt="Image 4">
         <figcaption>Sonny Angels</figcaption>
@@ -110,7 +90,8 @@ function showSlides(n) {
       </figure>
     </div>
 
-    <p>Among the most sought-after blind-box lines are Smiskis, the
+    <p class="animate-on-scroll">
+      Among the most sought-after blind-box lines are Smiskis, the
       glow-in-the-dark little creatures available in popular sets like the
       Sunday, Museum, and Hippers series—each box hiding one of several charming
       pocket pals. Sonny Angel figures have skyrocketed in popularity; these
@@ -129,7 +110,7 @@ function showSlides(n) {
     </p>
 
     <br>
-    <table class = "table">
+    <table class="table animate-on-scroll">
       <thead>
         <tr>
           <th>Series</th>
@@ -173,27 +154,23 @@ function showSlides(n) {
     </table>
 
     <br><br>
-    <h2>What to do with your buddies!</h2>
-    <div class="buddies-grid">
+    <h2 class="animate-on-scroll">What to do with your buddies!</h2>
+    <div class="buddies-grid animate-on-scroll">
       <figure>
         <img src="images/gallery6.jpg" alt="Buddies Activity 1">
-
       </figure>
       <figure>
         <img src="images/gallery7.jpg" alt="Buddies Activity 2">
-
       </figure>
       <figure>
         <img src="images/gallery8.jpg" alt="Buddies Activity 3">
-
       </figure>
       <figure>
         <img src="images/gallery9.jpg" alt="Buddies Activity 4">
-
       </figure>
     </div>
 
-    <p>
+    <p class="animate-on-scroll">
       So you’ve finally got your collection of little figures—now comes the fun
       part! You can just line them up on a shelf or tuck them safely into a
       keepsake box, but if you’re feeling crafty, stick them into a cute book
@@ -204,12 +181,11 @@ function showSlides(n) {
       keychain, or backpack zipper. Speaking of Smiski, their new “Hippers”
       series is perfect for hooking onto phones, computer monitors, and pretty
       much anything you want to spice up with a sneaky little buddy.
-
     </p>
 
     <br><br>
-    <h2>Popular spots to find mystery boxes</h2>
-    <div class="spots-grid">
+    <h2 class="animate-on-scroll">Popular spots to find mystery boxes</h2>
+    <div class="spots-grid animate-on-scroll">
       <figure>
         <img src="images/gallery10.webp" alt="Mystery Box Spot 1">
         <figcaption>Downtown Arcade</figcaption>
@@ -224,7 +200,7 @@ function showSlides(n) {
       </figure>
     </div>
 
-    <p>
+    <p class="animate-on-scroll">
       If you’re on the hunt for blind boxes, you can’t go wrong with spots like
       Miniso! They always seem to have fresh series at
       super reasonable prices. Kinokuniya is a treasure trove if you want
@@ -234,8 +210,26 @@ function showSlides(n) {
       collabs. Beyond those, you’ll also find cool blind-box selections at
       specialty toy boutiques, hobby shops, and even places like Urban
       Outfitters or Barnes & Noble when they host their collectible pop-ups.
-
     </p>
-    <footer>
+
+    <footer class="animate-on-scroll">
       <p>&copy; 2025 by Mystery Marvels. All rights reserved.</p>
     </footer>
+  </div>
+
+  <!-- scroll animation script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>

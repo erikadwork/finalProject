@@ -90,6 +90,10 @@ h3 {
   font-size: 20px;               
 }
 
+section.profile-section .profile-text h3 {
+  font-size: 18px !important;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
 .lead-section {
   padding: 20px;
 }
@@ -857,4 +861,28 @@ footer {
   margin: 0 0 1rem 1rem;   /* space: top | right | bottom | left */
   object-fit: cover;
   border-radius: 12px;
+}
+
+.worldmap {
+  position: relative;      /* make the container a positioning context */
+  display: inline-block;   /* shrink-wrap to your image */
+}
+
+.hotspot {
+  position: absolute;
+  background: rgba(255,255,0,0);
+  transition: background 0.2s;
+  cursor: pointer;
+  /* ↓ add this: */
+  border-radius: 8px;       /* rounded corners */
+}
+
+.hotspot:hover {
+  background: rgba(255, 248, 252, 0.3); /* yellow tint on hover */
+}
+
+/* only Sony Angel */
+#sony-angel .profile-img {
+  width: 100px;
+  height: auto;
 }
